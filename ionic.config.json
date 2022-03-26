@@ -1,0 +1,8 @@
+{
+  "name": "miAppTest",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "cfd7daa9"
+}
