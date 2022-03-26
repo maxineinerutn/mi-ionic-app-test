@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +8,18 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  public nombre:string;
+  public apellido:string;
+  public mostrar:boolean;
+  public direccion:string;
 
+  constructor(public navCtrl: NavController) {
+    this.mostrar=false;
+  }
+
+  MostrarDatos(nombre, apellido){
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.mostrar = true;
+  }
 }
